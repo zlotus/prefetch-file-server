@@ -1,0 +1,17 @@
+[package]
+name = "prefetch-file-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { version = "0.7", features = ["http1", "tokio"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "fs", "net"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["fmt", "env-filter"] }
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+toml = "0.8"
+anyhow = "1"
+urlencoding = "2"
+tokio-util = { version = "0.7", features = ["io"] }
+uuid = { version = "1", features = ["v4"] }

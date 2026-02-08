@@ -1,0 +1,20 @@
+# 监听地址
+ip = "0.0.0.0"
+
+# 监听端口
+port = 8080
+
+# 访问口令（必填）
+token = "xxx-xxx-xxx-xxx"
+
+# 要发布的目录，默认是当前目录下的 data
+data_dir = "data"
+
+# 日志文件路径（相对路径基于当前工作目录）
+log_file = "server.log"
+
+# 单个日志文件最大大小（MB），超过后滚动
+log_max_size_mb = 10
+
+# 最多保留几个历史文件，例如 server.log.1 ... server.log.5
+log_keep_files = 5
